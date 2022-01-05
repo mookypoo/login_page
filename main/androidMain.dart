@@ -48,7 +48,6 @@ class _AndroidMainState extends State<AndroidMain> {
   Widget _genderWidget({required IconData icon, required bool gender}) {
     return GestureDetector(
       onTap: () => this.setState(() {
-        /* 대충 짜느라 걍 border 보기위해 */
         this._isMale = !this._isMale;
       }),
       child: Container(
@@ -187,7 +186,6 @@ class _AndroidMainState extends State<AndroidMain> {
                                 onPressed: () {},
                               ),
                             ),
-                            /* 그냥 checkbox 쓰고싶은데 사이즈 조절이 안되네요 ㅠ */
                             Container(
                               width: MediaQuery.of(context).size.width * 0.79,
                               margin: EdgeInsets.all(12.0),
